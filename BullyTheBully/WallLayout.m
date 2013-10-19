@@ -1,22 +1,22 @@
 //
-//  VoteLayout.m
+//  WallLayout.m
 //  BullyTheBully
 //
 //  Created by Atanas Bahchevanov on 10/19/13.
 //  Copyright (c) 2013 Kris Parmakov. All rights reserved.
 //
 
-#import "VoteLayout.h"
+#import "WallLayout.h"
 
-@implementation VoteLayout
+@implementation WallLayout
 
 - (id)init
 {
     self = [super init];
     if (self) {
         self.scrollDirection = UICollectionViewScrollDirectionVertical;
-        self.itemSize = CGSizeMake(285, 100);
-        self.sectionInset = UIEdgeInsetsMake(20.0, 0.0, 70.0, 0.0);
+        self.itemSize = CGSizeMake(285, 160);
+        self.sectionInset = UIEdgeInsetsMake(85.0, 0.0, 70.0, 0.0);
     }
     return self;
 }

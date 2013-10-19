@@ -40,6 +40,8 @@
 		C04AB82C1812F8BD00659B51 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = C04AB82A1812F8BD00659B51 /* wall.png */; };
 		C04AB82E1813004B00659B51 /* add_vote.png in Resources */ = {isa = PBXBuildFile; fileRef = C04AB82D1813004B00659B51 /* add_vote.png */; };
 		C04AB8301813008E00659B51 /* public.png in Resources */ = {isa = PBXBuildFile; fileRef = C04AB82F1813008E00659B51 /* public.png */; };
+		C04AB835181314CE00659B51 /* WallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C04AB834181314CE00659B51 /* WallLayout.m */; };
+		C04AB8381813150100659B51 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C04AB8371813150100659B51 /* PostCell.m */; };
 		C084FED61812CE75007C336D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C084FED51812CE75007C336D /* Parse.framework */; };
 		C084FED91812CEDA007C336D /* VoteLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C084FED81812CEDA007C336D /* VoteLayout.m */; };
 		C084FEDC1812CEED007C336D /* VoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C084FEDB1812CEED007C336D /* VoteCell.m */; };
@@ -101,6 +103,10 @@
 		C04AB82A1812F8BD00659B51 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 		C04AB82D1813004B00659B51 /* add_vote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_vote.png; sourceTree = "<group>"; };
 		C04AB82F1813008E00659B51 /* public.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = public.png; sourceTree = "<group>"; };
+		C04AB833181314CE00659B51 /* WallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallLayout.h; sourceTree = "<group>"; };
+		C04AB834181314CE00659B51 /* WallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallLayout.m; sourceTree = "<group>"; };
+		C04AB8361813150100659B51 /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		C04AB8371813150100659B51 /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		C084FED51812CE75007C336D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		C084FED71812CEDA007C336D /* VoteLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteLayout.h; sourceTree = "<group>"; };
 		C084FED81812CEDA007C336D /* VoteLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteLayout.m; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 				2600FAE11812799100A91AE3 /* Main.storyboard */,
 				2600FAE71812799100A91AE3 /* SecondViewController.h */,
 				2600FAE81812799100A91AE3 /* SecondViewController.m */,
+				C04AB8391813150600659B51 /* Wall-Posts */,
 				2600FB0B18128B9800A91AE3 /* LoginViewController.h */,
 				2600FB0C18128B9800A91AE3 /* LoginViewController.m */,
 				2600FAEA1812799200A91AE3 /* Images.xcassets */,
@@ -277,6 +284,17 @@
 				C084FEDB1812CEED007C336D /* VoteCell.m */,
 			);
 			name = Vote;
+			sourceTree = "<group>";
+		};
+		C04AB8391813150600659B51 /* Wall-Posts */ = {
+			isa = PBXGroup;
+			children = (
+				C04AB8361813150100659B51 /* PostCell.h */,
+				C04AB8371813150100659B51 /* PostCell.m */,
+				C04AB833181314CE00659B51 /* WallLayout.h */,
+				C04AB834181314CE00659B51 /* WallLayout.m */,
+			);
+			name = "Wall-Posts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +416,8 @@
 				C084FEDC1812CEED007C336D /* VoteCell.m in Sources */,
 				2600FAE61812799100A91AE3 /* FirstViewController.m in Sources */,
 				2600FADC1812799100A91AE3 /* main.m in Sources */,
+				C04AB8381813150100659B51 /* PostCell.m in Sources */,
+				C04AB835181314CE00659B51 /* WallLayout.m in Sources */,
 				2600FB0D18128B9800A91AE3 /* LoginViewController.m in Sources */,
 				C084FED91812CEDA007C336D /* VoteLayout.m in Sources */,
 			);
