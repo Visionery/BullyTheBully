@@ -261,14 +261,22 @@
 		C04AB83118130C3F00659B51 /* Give hugs */ = {
 			isa = PBXGroup;
 			children = (
-				C084FED71812CEDA007C336D /* VoteLayout.h */,
-				C084FED81812CEDA007C336D /* VoteLayout.m */,
-				C084FEDA1812CEED007C336D /* VoteCell.h */,
-				C084FEDB1812CEED007C336D /* VoteCell.m */,
+				C04AB83218130D0000659B51 /* Vote */,
 				2600FAE41812799100A91AE3 /* FirstViewController.h */,
 				2600FAE51812799100A91AE3 /* FirstViewController.m */,
 			);
 			name = "Give hugs";
+			sourceTree = "<group>";
+		};
+		C04AB83218130D0000659B51 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				C084FED71812CEDA007C336D /* VoteLayout.h */,
+				C084FED81812CEDA007C336D /* VoteLayout.m */,
+				C084FEDA1812CEED007C336D /* VoteCell.h */,
+				C084FEDB1812CEED007C336D /* VoteCell.m */,
+			);
+			name = Vote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
