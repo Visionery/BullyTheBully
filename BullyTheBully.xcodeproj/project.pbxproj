@@ -185,13 +185,8 @@
 				C04AB8071812EB8A00659B51 /* images */,
 				2600FADE1812799100A91AE3 /* AppDelegate.h */,
 				2600FADF1812799100A91AE3 /* AppDelegate.m */,
+				C04AB83118130C3F00659B51 /* Give hugs */,
 				2600FAE11812799100A91AE3 /* Main.storyboard */,
-				2600FAE41812799100A91AE3 /* FirstViewController.h */,
-				2600FAE51812799100A91AE3 /* FirstViewController.m */,
-				C084FED71812CEDA007C336D /* VoteLayout.h */,
-				C084FED81812CEDA007C336D /* VoteLayout.m */,
-				C084FEDA1812CEED007C336D /* VoteCell.h */,
-				C084FEDB1812CEED007C336D /* VoteCell.m */,
 				2600FAE71812799100A91AE3 /* SecondViewController.h */,
 				2600FAE81812799100A91AE3 /* SecondViewController.m */,
 				2600FB0B18128B9800A91AE3 /* LoginViewController.h */,
@@ -261,6 +256,19 @@
 				C04AB8121812ED0900659B51 /* male1.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		C04AB83118130C3F00659B51 /* Give hugs */ = {
+			isa = PBXGroup;
+			children = (
+				C084FED71812CEDA007C336D /* VoteLayout.h */,
+				C084FED81812CEDA007C336D /* VoteLayout.m */,
+				C084FEDA1812CEED007C336D /* VoteCell.h */,
+				C084FEDB1812CEED007C336D /* VoteCell.m */,
+				2600FAE41812799100A91AE3 /* FirstViewController.h */,
+				2600FAE51812799100A91AE3 /* FirstViewController.m */,
+			);
+			name = "Give hugs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

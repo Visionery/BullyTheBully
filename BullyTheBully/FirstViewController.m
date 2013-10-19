@@ -31,7 +31,7 @@
         if (error) {
             NSLog(@"Error");
         } else {
-            _votesInfo = [NSMutableArray arrayWithArray:array];
+            _votesInfo = [self sortArray:array];
             [self.collectionView reloadData];
         }
     }];
@@ -83,9 +83,43 @@
 #pragma mark - UICollectionViewDelegate
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    PFObject *Vote = [PFObject objectWithClassName:@"Vote"];
-//    [Vote setObject:@"BlahBlah" forKey:@"description"];
-//    [Vote save];
+    if (indexPath.row == _votesInfo.count)
+    {
+        NSLog(@"Opps");
+    }
+    else
+    {
+        PFObject *vote = [PFObject objectWithoutDataWithClassName:@"Vote" objectId:((PFObject*)_votesInfo[indexPath.row]).objectId];
+        [vote setObject:[NSString stringWithFormat:@"%d",[[_votesInfo[indexPath.row] objectForKey:@"hugsCount"] integerValue] + 1] forKey:@"hugsCount"];
+        [vote save];
+    }
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Vote"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error){
+        if (error) {
+            NSLog(@"Error");
+        } else {
+            _votesInfo = [self sortArray:array];
+            [self.collectionView reloadData];
+        }
+    }];
+}
+
+-(NSMutableArray*)sortArray:(NSArray*)source
+{
+    NSArray *sortedArray;
+    sortedArray = [source sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        int first = [[(NSDictionary*)a objectForKey:@"hugsCount"] integerValue];
+        int second = [[(NSDictionary*)b objectForKey:@"hugsCount"] integerValue];
+        if (first > second) {
+            return NSOrderedAscending;
+        } else if (first < second) {
+            return NSOrderedDescending;
+        } else {
+            return NSOrderedSame;
+        }
+    }];
+    return [NSMutableArray arrayWithArray:sortedArray];
 }
 
 @end
